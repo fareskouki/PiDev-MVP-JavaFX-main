@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rsscreator.ui.viewFeed.ViewFeedFXMLController">
+   <center>
+      <AnchorPane prefHeight="313.0" prefWidth="543.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="20.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title :" wrappingWidth="48.77197265625" />
+            <JFXTextField fx:id="titleFiled" layoutX="95.0" layoutY="8.0" maxWidth="456.0" minWidth="456.0" prefHeight="32.0" prefWidth="456.0" />
+            <Text layoutX="20.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author :" wrappingWidth="59.77197265625" />
+            <JFXTextField fx:id="authorFiled" layoutX="95.0" layoutY="40.0" maxWidth="456.0" minWidth="456.0" prefHeight="32.0" prefWidth="456.0" />
+            <Text layoutX="20.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Link :" wrappingWidth="48.77197265625" />
+            <JFXTextField fx:id="linkFiled" layoutX="95.0" layoutY="72.0" maxWidth="456.0" minWidth="456.0" prefHeight="32.0" prefWidth="456.0" />
+            <Text layoutX="20.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GUID :" wrappingWidth="48.77197265625" />
+            <JFXTextField fx:id="guidFiled" layoutX="95.0" layoutY="104.0" maxWidth="456.0" minWidth="456.0" prefHeight="32.0" prefWidth="456.0" />
+            <Text layoutX="20.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description :" wrappingWidth="87.77197265625" />
+            <JFXTextArea fx:id="descrFiled" layoutX="33.0" layoutY="172.0" maxWidth="545.0" minWidth="545.0" prefHeight="114.0" prefWidth="545.0" />
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <HBox prefHeight="87.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="addBtn" buttonType="RAISED" onAction="#addMsg" prefHeight="112.0" prefWidth="200.0" text="Add" />
+            <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="10.0" onAction="#editMsg" prefHeight="112.0" prefWidth="200.0" text="Edit" />
+            <JFXButton buttonType="RAISED" layoutX="174.0" layoutY="10.0" onAction="#deleMsg" prefHeight="112.0" prefWidth="200.0" text="Delete" />
+            <JFXButton buttonType="RAISED" layoutX="410.0" layoutY="10.0" onAction="#cancel" prefHeight="112.0" prefWidth="200.0" text="Cancel" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

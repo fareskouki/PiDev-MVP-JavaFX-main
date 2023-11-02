@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="826.0" prefWidth="982.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gn.module.produit.ControllerProduit">
+    <children>
+        <VBox id="form-box" layoutX="33.0" layoutY="166.0" prefHeight="263.0" prefWidth="350.0" spacing="22.0">
+            <children>
+                <Label text="Nom Produit" />
+                <TextField fx:id="tfn" />
+
+                <Label text="Description" />
+                <TextField fx:id="tfd" />
+
+                <Label text="Prix" />
+                <TextField fx:id="tfp" />
+
+                <Label text="Stock" />
+                <TextField fx:id="tfs" />
+
+                <Label text="Rating" />
+                <TextField fx:id="tfr" />
+            <Label text="Categorie" />
+<ComboBox fx:id="idcat" prefWidth="150.0" style="-fx-text-fill: black" />
+
+                <Label text="Image" />
+                <HBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="70.0">
+                    <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#chooseImage" prefHeight="26.0" prefWidth="131.0" styleClass="form-control" text="Choisir une image" HBox.hgrow="ALWAYS">
+                        <HBox.margin>
+                            <Insets bottom="20.0" right="20.0" top="-10.0" />
+                        </HBox.margin>
+                    </Button>
+                    <ImageView fx:id="imageIV" fitHeight="50.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                        <HBox.margin>
+                            <Insets bottom="10.0" left="10.0" top="10.0" />
+                        </HBox.margin>
+                        <Image url="@../../../images/mdi/image-placeholder.png" />
+                    </ImageView>
+                </HBox>
+
+            </children>
+        </VBox>
+            
+        
+        <Label layoutX="262.0" layoutY="57.0" text="Gestion des Produits">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Label>
+           <VBox id="table-box" layoutX="411.0" layoutY="129.0" prefHeight="520.0" prefWidth="524.0">
+            <children>
+                <Label id="table-title" text="Liste des Produits" />
+
+                <TableView fx:id="tableview" prefHeight="477.0" prefWidth="515.0">
+                    <columns>
+                        <TableColumn fx:id="colnom" text="Nom Produit" />
+                        <TableColumn fx:id="colcat" prefWidth="75.0" text="categorie" />
+                        <TableColumn fx:id="coldesc" text="Description" />
+                        <TableColumn fx:id="coldp" prefWidth="43.20001220703125" text="Prix" />
+                        <TableColumn fx:id="colst" prefWidth="55.2000732421875" text="Stock" />
+                        <TableColumn fx:id="colrate" prefWidth="56.7999267578125" text="Rating" />
+                        <TableColumn fx:id="colimg" prefWidth="132.0001220703125" text="Image" />
+                    </columns>
+                </TableView>
+
+                <HBox id="table-buttons" prefHeight="0.0" prefWidth="450.0" spacing="10.0">
+                    <Button fx:id="btn1" onAction="#ajouter" text="Ajouter" />
+                    <Button fx:id="bnt2" onAction="#update" text="Modifier" />
+                    <Button fx:id="btn3" onAction="#handleDeleteButton" text="Supprimer" />
+                </HBox>
+
+            </children>
+        </VBox>
+        <ImageView fitHeight="99.0" fitWidth="126.0" layoutX="14.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+<Button fx:id="categorieButton" layoutX="731.0" layoutY="53.0" onAction="#switchToCategorie" text="Categorie" />
+       
+ </children>
+</AnchorPane>

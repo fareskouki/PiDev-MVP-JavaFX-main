@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="695.0" prefWidth="1232.0"  xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gn.module.reservation.EvenementsReservations_Index_backController">
+
+   <children>
+      <VBox layoutX="1120.0" layoutY="-1.0" prefHeight="695.0" prefWidth="1232.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="TOP_RIGHT">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="27.0" prefWidth="1146.0">
+                     <children>
+                        <Label text="GameGalaxy Admin">
+                           <font>
+                              <Font name="Arial" size="34.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Button fx:id="closeBtn" mnemonicParsing="false" onAction="#closeApp" prefHeight="31.0" prefWidth="18.0" text="X" textAlignment="JUSTIFY" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <TabPane fx:id="tabPane" prefHeight="613.0" prefWidth="1175.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab fx:id="tabEvenements" text="Evenements">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <HBox alignment="CENTER">
+                                       <children>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="375.0" text="Gestion des Evenements">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets top="10.0" />
+                                             </padding>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="20.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox prefHeight="500.0" prefWidth="900.0" spacing="20.0">
+                                       <children>
+                                          <VBox alignment="CENTER" prefHeight="500.0" prefWidth="300.0" spacing="15.0">
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="52.0" prefWidth="406.0" spacing="20.0">
+                                                   <children>
+                                                      <TextField fx:id="IDTextfield" alignment="CENTER" editable="false" prefHeight="26.0" prefWidth="174.0" />
+                                                   </children>
+                                                   <cursor>
+                                                      <Cursor fx:constant="CROSSHAIR" />
+                                                   </cursor>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="52.0" prefWidth="406.0" spacing="20.0">
+                                                   <children>
+                                                      <Label contentDisplay="CENTER" prefWidth="90.0" text="Nom" textAlignment="CENTER" />
+                                                      <TextField fx:id="NOM" prefHeight="26.0" prefWidth="176.0" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="52.0" prefWidth="406.0" spacing="20.0">
+                                                   <children>
+                                                      <Label contentDisplay="CENTER" prefWidth="90.0" text="Date" textAlignment="CENTER" />
+                                                      <DatePicker fx:id="DATEPICKER" prefHeight="31.0" prefWidth="179.0" />
+                                                   </children>
+                                                </HBox>
+                                                <VBox alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="400.0" spacing="10.0">
+                                                   <children>
+                                                      <Label contentDisplay="CENTER" prefWidth="90.0" text="Description" textAlignment="CENTER" />
+                                                      <HBox>
+                                                         <children>
+                                                            <TextArea fx:id="DESC" prefHeight="100.0" prefWidth="384.0" />
+                                                            <ScrollBar orientation="VERTICAL" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="400.0" spacing="5.0">
+                                                   <children>
+                                                      <Label contentDisplay="CENTER" prefWidth="90.0" text="Durée" textAlignment="CENTER" />
+                                                      <Spinner fx:id="DUREE_SPINNER" prefHeight="26.0" prefWidth="66.0" />
+                                                      <Label prefHeight="18.0" prefWidth="102.0" text="heure(s)" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="400.0" spacing="5.0">
+                                                   <children>
+                                                      <Label contentDisplay="CENTER" prefWidth="90.0" text="Capacité" textAlignment="CENTER" />
+                                                      <Spinner fx:id="CAP_SPINNER" editable="true" prefHeight="26.0" prefWidth="67.0" />
+                                                      <Label prefHeight="18.0" prefWidth="100.0" text="Personne(s)" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="400.0" spacing="20.0">
+                                                   <children>
+                                                      <Label contentDisplay="CENTER" prefWidth="90.0" text="Type" textAlignment="CENTER" />
+                                                      <ChoiceBox fx:id="TYPE_CB" prefHeight="28.0" prefWidth="181.0" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefWidth="70.0" spacing="5.0">
+                                                   <children>
+                                                      <Label contentDisplay="CENTER" prefHeight="18.0" prefWidth="46.0" text="Image" textAlignment="CENTER" />
+                                                      <Button onAction="#selectImage" prefHeight="32.0" prefWidth="88.0" text="Browse..." />
+                                                      <Label fx:id="IMG" prefHeight="21.0" prefWidth="111.0" text="None selected" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="50.0" spacing="20.0">
+                                                   <children>
+                                                      <Button fx:id="addButton" mnemonicParsing="false" onAction="#addItem" text="Add" />
+                                                      <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteItem" text="Delete" />
+                                                      <Button fx:id="updateButton" mnemonicParsing="false" onAction="#updateItem" text="Update" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="10.0" right="10.0" />
+                                                   </padding>
+                                                </HBox>
+                                             </children>
+                                             <padding>
+                                                <Insets left="5.0" right="5.0" />
+                                             </padding>
+                                          </VBox>
+                                          <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" spacing="10.0">
+                                             <children>
+                                                <HBox spacing="20.0">
+                                                   <children>
+                                                      <Label text="Rechercher:" />
+                                                      <TextField fx:id="searchTextField" onKeyTyped="#search" />
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets left="20.0" />
+                                                   </VBox.margin>
+                                                </HBox>
+                                                <TableView fx:id="tableview" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMousePressed="#selectItem" prefHeight="400.0" prefWidth="824.0" tableMenuButtonVisible="true">
+                                                  <columns>
+                                                    <TableColumn fx:id="colid" editable="false" prefWidth="29.0" text="ID" />
+                                                    <TableColumn fx:id="colnom" prefWidth="246.0" text="Nom" />
+                                                      <TableColumn fx:id="coldesc" minWidth="0.0" prefWidth="212.0" text="Description" />
+                                                      <TableColumn fx:id="colduree" prefWidth="49.0" text="Durée" />
+                                                      <TableColumn fx:id="colcap" prefWidth="73.0" text="Capacité" />
+                                                      <TableColumn fx:id="coltype" prefWidth="75.0" text="Type" />
+                                                      <TableColumn fx:id="coldate" prefWidth="123.0" text="Date" />
+                                                  </columns>
+                                                </TableView>
+                                                <HBox alignment="CENTER_RIGHT" prefHeight="52.0" prefWidth="824.0" spacing="20.0">
+                                                   <children>
+                                                      <Button mnemonicParsing="false" onAction="#goToFront" text="Go to User View" />
+                                                      <Button fx:id="showReservationsBtn" mnemonicParsing="false" onAction="#showReservations" text="Show Reservations" />
+                                                      <Button fx:id="calendarBtn" mnemonicParsing="false" onAction="#showCalendar" text="Calendar" />
+                                                      <Button fx:id="showBtn" mnemonicParsing="false" onAction="#show" text="Show" />
+                                                      <Button fx:id="deselectBtn" mnemonicParsing="false" onAction="#deselectItem" text="Deselect" />
+                                                      <Button fx:id="refreshBtn" contentDisplay="CENTER" mnemonicParsing="false" onAction="#refresh" text="Refresh" textAlignment="CENTER" />
+                                                      
+                                                         </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab fx:id="tabReservations" text="Réservations">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="521.0" prefWidth="1135.0">
+                                 <children>
+                                    <HBox alignment="CENTER">
+                                       <children>
+                                          <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="375.0" text="Gestion des Réservations">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="500.0" prefWidth="900.0" spacing="20.0">
+                                       <children>
+                                          <VBox alignment="CENTER" prefHeight="500.0" prefWidth="500.0" spacing="15.0">
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="52.0" prefWidth="406.0" spacing="20.0">
+                                                   <children>
+                                                      <TextField fx:id="IDTextfield_res" alignment="CENTER" editable="false" prefHeight="26.0" prefWidth="174.0" />
+                                                   </children>
+                                                   <cursor>
+                                                      <Cursor fx:constant="CROSSHAIR" />
+                                                   </cursor>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="52.0" prefWidth="406.0" spacing="20.0">
+                                                   <children>
+                                                      <Label contentDisplay="CENTER" prefWidth="90.0" text="Date" textAlignment="CENTER" />
+                                                      <DatePicker fx:id="DATEPICKER_res" prefHeight="31.0" prefWidth="175.0" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="52.0" prefWidth="406.0" spacing="20.0">
+                                                   <children>
+                                                      <Label contentDisplay="CENTER" prefWidth="90.0" text="Membre" textAlignment="CENTER" />
+                                                      <ChoiceBox fx:id="CB_MEMBRE" prefHeight="31.0" prefWidth="137.0" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="52.0" prefWidth="406.0" spacing="20.0">
+                                                   <children>
+                                                      <Label contentDisplay="CENTER" prefWidth="90.0" text="Evenement" textAlignment="CENTER" />
+                                                      <ChoiceBox fx:id="CB_EVENT" prefHeight="31.0" prefWidth="134.0" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefWidth="70.0" spacing="5.0" />
+                                                <HBox alignment="CENTER" prefHeight="50.0" spacing="20.0">
+                                                   <children>
+                                                      <Button fx:id="addButton_res" mnemonicParsing="false" onAction="#addItem_res" text="Add" />
+                                                      <Button fx:id="deleteButton_res" mnemonicParsing="false" onAction="#deleteItem_res" text="Delete" />
+                                                      <Button fx:id="updateButton_res" mnemonicParsing="false" onAction="#updateItem_res" text="Update" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="10.0" right="10.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <Label fx:id="errorLabel_res" styleClass="alert" text="ERROR_MSG" underline="true" />
+                                             </children>
+                                             <padding>
+                                                <Insets left="5.0" right="5.0" />
+                                             </padding>
+                                          </VBox>
+                                          <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" spacing="10.0">
+                                             <children>
+                                                <TableView fx:id="tableview_res" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMousePressed="#selectItem" prefHeight="400.0" prefWidth="735.0" tableMenuButtonVisible="true">
+                                                   <columns>
+                                                      <TableColumn fx:id="colid_res" editable="false" prefWidth="29.0" text="ID" />
+                                                      <TableColumn fx:id="coldate_res" prefWidth="103.0" text="Date" />
+                                                      <TableColumn fx:id="colmembre" prefWidth="119.0" text="Membre" />
+                                                      <TableColumn fx:id="colevent" prefWidth="554.0" text="Evenement" />
+                                                   </columns>
+                                                </TableView>
+                                                <HBox alignment="CENTER_RIGHT" prefHeight="52.0" prefWidth="824.0" spacing="20.0">
+                                                   <children>
+                                                      <Label fx:id="showingLabel" text="Showing: all reservations" />
+                                                      <Button fx:id="deselectBtn_res" mnemonicParsing="false" onAction="#deselectItem_res" text="Deselect" />
+                                                      <Button fx:id="refreshBtn_res" contentDisplay="CENTER" mnemonicParsing="false" onAction="#refresh_res" text="Refresh" textAlignment="CENTER" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="20.0" />
+                                                   </padding>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</AnchorPane>

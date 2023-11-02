@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="371.0" styleClass="btn" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gn.module.blog_list.UpdateBlogController">
+    <children>
+        <HBox alignment="CENTER" layoutX="602.0" layoutY="-1.0" prefHeight="0.0" prefWidth="355.0">
+            <children>
+                <FontAwesomeIconView fx:id="backToBlogList" onMouseClicked="#backToBlogList" glyphName="LIST" size="23" translateX="160.0" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="384.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Update Blog">
+                    <font>
+                        <Font name="Bauhaus 93" size="32.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                </Text>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Title" wrappingWidth="102.13671875">
+                    <font>
+                        <Font name="Century Gothic" size="21.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="titleField" prefHeight="25.0" prefWidth="358.0">
+                    <font>
+                        <Font name="Century Gothic" size="20.0" />
+                    </font>
+                </TextField>
+            </children>
+            <VBox.margin>
+                <Insets top="30.0" />
+            </VBox.margin>
+        </HBox>
+        <HBox alignment="CENTER">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Content" wrappingWidth="102.13671875">
+                    <font>
+                        <Font name="Century Gothic" size="21.0" />
+                    </font>
+                </Text>
+                <TextArea fx:id="contentField" prefHeight="200.0" prefWidth="358.0">
+                    <font>
+                        <Font name="Century Gothic" size="20.0" />
+                    </font>
+                </TextArea>
+            </children>
+            <VBox.margin>
+                <Insets top="30.0" />
+            </VBox.margin>
+        </HBox>
+        <HBox alignment="CENTER">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Image" wrappingWidth="102.13671875">
+                    <font>
+                        <Font name="Century Gothic" size="21.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="selectedImage" editable="false" />
+                <Button fx:id="selectImageButton" mnemonicParsing="false" onAction="#selectImage" text="Select" />
+            </children>
+            <VBox.margin>
+                <Insets top="30.0" />
+            </VBox.margin>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="62.0" prefWidth="384.0">
+            <VBox.margin>
+                <Insets top="25.0" />
+            </VBox.margin>
+            <children>
+                <Button onMouseClicked="#update" prefHeight="45.0" prefWidth="160.0" style="-fx-background-color: #00E676;" styleClass="btn" text="Update">
+                    <HBox.margin>
+                        <Insets right="8.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="Century Gothic" size="24.0" />
+                    </font>
+                </Button>
+                <Button layoutX="132.0" layoutY="19.0" onMouseClicked="#cancel" prefHeight="45.0" prefWidth="160.0" style="-fx-background-color: #FF6347;" styleClass="btn" text="Cancel">
+                    <HBox.margin>
+                        <Insets left="8.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="Century Gothic" size="24.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+    </children>
+    <padding>
+        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+    </padding>
+</VBox>

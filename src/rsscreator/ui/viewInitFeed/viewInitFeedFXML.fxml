@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="306.0" prefWidth="357.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="rsscreator.ui.viewInitFeed.ViewInitFeedFXMLController">
+   <children>
+      <Text layoutX="8.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title :" />
+      <JFXTextField fx:id="title" layoutX="89.0" layoutY="14.0" maxWidth="260.0" minWidth="260.0" prefHeight="32.0" prefWidth="260.0" />
+      <Text layoutX="8.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright :" />
+      <JFXTextField fx:id="link" layoutX="89.0" layoutY="46.0" maxWidth="260.0" minWidth="260.0" prefHeight="32.0" prefWidth="260.0" />
+      <Text layoutX="8.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Language :" />
+      <JFXTextField fx:id="lang" layoutX="91.0" layoutY="78.0" maxWidth="260.0" minWidth="260.0" prefHeight="32.0" prefWidth="260.0" />
+      <Text layoutX="8.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Link :" />
+      <JFXTextField fx:id="copyR" layoutX="91.0" layoutY="115.0" maxWidth="260.0" minWidth="260.0" prefHeight="32.0" prefWidth="260.0" />
+      <Text layoutX="7.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description :" />
+      <TextArea fx:id="descr" layoutX="11.0" layoutY="180.0" prefHeight="74.0" prefWidth="333.0" />
+      <JFXButton buttonType="RAISED" layoutX="127.0" layoutY="261.0" onAction="#save" prefHeight="38.0" prefWidth="83.0" text="Save" />
+   </children>
+</AnchorPane>

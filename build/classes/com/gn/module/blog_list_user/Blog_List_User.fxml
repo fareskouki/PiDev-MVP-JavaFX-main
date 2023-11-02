@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="452.0" prefWidth="641.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gn.module.blog_list_user.BlogListUserController">
+    <stylesheets>
+        <URL value="@tableview.css" />
+    </stylesheets>
+    <children>
+        <TableView fx:id="blogTable" layoutX="34.0" layoutY="157.0" prefHeight="265.0" prefWidth="574.0">
+            <columns>
+                <TableColumn fx:id="idColumn" maxWidth="70.0" prefWidth="70.0" style="-fx-alignment: center;" text="ID" />
+                <TableColumn fx:id="titleColumn" maxWidth="100.0" prefWidth="100.0" style="-fx-alignment: center;" text="Title" />
+                <TableColumn fx:id="contentColumn" maxWidth="300.0" prefWidth="182.0" style="-fx-alignment: center;" text="Content" />
+                <TableColumn fx:id="imageColumn" maxWidth="160.0" prefWidth="108.0" style="-fx-alignment: center;" text="Image" />
+                <TableColumn fx:id="actionsColumn" maxWidth="187.0" prefWidth="113.0" style="-fx-alignment: center;" text="Actions" />
+            </columns>
+        </TableView>
+        <Pane layoutY="59.0" prefHeight="3.0" prefWidth="200.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+        
+        <HBox alignment="CENTER" layoutX="602.0" layoutY="-1.0" prefHeight="36.0" prefWidth="37.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="34.0" layoutY="73.0" prefHeight="76.0" prefWidth="200.0">
+            <children>
+                <FontAwesomeIconView fill="#00e676" glyphName="REFRESH" onMouseClicked="#refreshTable" size="45" styleClass="btn">
+                    <HBox.margin>
+                        <Insets right="10.0" />
+                    </HBox.margin>
+                </FontAwesomeIconView>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

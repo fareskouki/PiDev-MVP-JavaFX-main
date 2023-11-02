@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Test1.jnlp">
+  <information>
+    <title>Test1</title>
+    <vendor>MrStealYourMom</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Test1.jar" size="87501556" download="eager" />
+    <jar href="lib\GNAvatarView-1.0-rc.jar" size="26082" download="eager" />
+    <jar href="lib\GNButton-1.1.0.jar" size="194323" download="eager" />
+    <jar href="lib\GNCalendar-1.0-alpha.jar" size="11402" download="eager" />
+    <jar href="lib\GNCarousel-2.1.5.jar" size="530460" download="eager" />
+    <jar href="lib\GNDecorator-2.1.2-alpha.jar" size="2869249" download="eager" />
+    <jar href="lib\animatefx-1.2.0.jar" size="85592" download="eager" />
+    <jar href="lib\colors-1.4.jar" size="32122" download="eager" />
+    <jar href="lib\commons-codec-1.15.jar" size="353793" download="eager" />
+    <jar href="lib\commons-io-2.7.jar" size="276413" download="eager" />
+    <jar href="lib\commons-logging-1.2.jar" size="61829" download="eager" />
+    <jar href="lib\controlsfx-8.40.14.jar" size="1215643" download="eager" />
+    <jar href="lib\core-3.4.0.jar" size="539901" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib\httpclient-4.5.13.jar" size="780321" download="eager" />
+    <jar href="lib\httpclient-4.5.6.jar" size="767140" download="eager" />
+    <jar href="lib\httpcore-4.4.10.jar" size="326356" download="eager" />
+    <jar href="lib\httpcore-4.4.13.jar" size="328593" download="eager" />
+    <jar href="lib\itext-pdfa-5.5.13.1.jar" size="119290" download="eager" />
+    <jar href="lib\itext-xtra-5.5.13.1.jar" size="120753" download="eager" />
+    <jar href="lib\itextpdf-5.4.2.jar" size="1924147" download="eager" />
+    <jar href="lib\itextpdf-5.5.13.1.jar" size="2330916" download="eager" />
+    <jar href="lib\itextpdf-5.5.9.jar" size="2287148" download="eager" />
+    <jar href="lib\jackson-annotations-2.10.3.jar" size="68079" download="eager" />
+    <jar href="lib\jackson-annotations-2.14.0.jar" size="76091" download="eager" />
+    <jar href="lib\jackson-core-2.10.3.jar" size="349108" download="eager" />
+    <jar href="lib\jackson-core-2.14.0.jar" size="458975" download="eager" />
+    <jar href="lib\jackson-databind-2.10.3.jar" size="1404171" download="eager" />
+    <jar href="lib\jackson-databind-2.14.0.jar" size="1618273" download="eager" />
+    <jar href="lib\jackson-dataformat-xml-2.14.0.jar" size="130374" download="eager" />
+    <jar href="lib\jackson-datatype-jsr310-2.14.0.jar" size="122014" download="eager" />
+    <jar href="lib\java-json.jar" size="84697" download="eager" />
+    <jar href="lib\javase-3.4.0.jar" size="36826" download="eager" />
+    <jar href="lib\javax.mail-1.6.2.jar" size="659031" download="eager" />
+    <jar href="lib\javax.mail.jar" size="659033" download="eager" />
+    <jar href="lib\jbcrypt.jar" size="14127" download="eager" />
+    <jar href="lib\jfoenix-19.0.1.jar" size="2435023" download="eager" />
+    <jar href="lib\jfoenix-8.0.7.jar" size="2631271" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2401594" download="eager" />
+    <jar href="lib\junit-4.12-javadoc.jar" size="943877" download="eager" />
+    <jar href="lib\junit-4.12-sources.jar" size="203570" download="eager" />
+    <jar href="lib\junit-4.12.jar" size="316791" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.15-bin.jar" size="785998" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+    <jar href="lib\scenicView.jar" size="524264" download="eager" />
+    <jar href="lib\slf4j-api-1.7.30.jar" size="41472" download="eager" />
+    <jar href="lib\tilesfx-1.5.2.jar" size="1365796" download="eager" />
+    <jar href="lib\twilio-7.48.0.jar" size="3732520" download="eager" />
+    <jar href="lib\twilio-9.4.0.jar" size="4925044" download="eager" />
+    <jar href="lib\xmlworker-5.5.13.1.jar" size="259324" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="com.gn.App"  name="Test1" />
+  <update check="always"/>
+</jnlp>

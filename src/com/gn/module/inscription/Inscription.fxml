@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gn.module.inscription.InscriptionController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="5.0" layoutY="5.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane id="AnchorPane" layoutX="-8.0" prefHeight="762.0" prefWidth="735.0" style="-fx-background-color: #c6e2ff;" styleClass="mainFxmlClass">
+               <children>
+                  <TextField fx:id="password2" layoutX="259.0" layoutY="505.0" prefHeight="26.0" prefWidth="216.0" promptText="Redériger votre mot de passe" />
+                  <Pane layoutX="-11.0" layoutY="-12.0" prefHeight="62.0" prefWidth="745.0" style="-fx-background-color: white;">
+                     <children>
+                        <Text fill="#003366" layoutX="322.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inscription">
+                           <font>
+                              <Font name="Arial Unicode MS" size="22.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Accordion layoutX="106.0" layoutY="171.0" />
+                  <Line endX="538.0" endY="0.20001220703125" layoutX="195.0" layoutY="51.0" startX="-193.60000610351562" startY="0.20001220703125" stroke="#003366" strokeWidth="2.0" />
+                  <Label layoutX="26.0" layoutY="93.0" prefHeight="18.0" prefWidth="64.0" />
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="521.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="681.0" layoutX="135.0" layoutY="71.0" stroke="#3392cb" strokeType="INSIDE" width="462.0" />
+                  <Line endX="337.20001220703125" layoutX="249.0" layoutY="102.0" startX="-100.0" stroke="#3392cb" strokeWidth="2.0" />
+                  <Text fill="#003366" layoutX="149.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="S'inscrire" wrappingWidth="89.26251220703125">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+                  <Button id="Button Un" fx:id="loginBtn" layoutX="277.0" layoutY="682.0" mnemonicParsing="false" onAction="#signUp" prefHeight="31.0" prefWidth="82.0" style="-fx-background-color: #5DD6F4;" stylesheets="@Espace_Admin.css" text="S'inscrire" textFill="WHITE">
+                     <effect>
+                        <ColorAdjust />
+                     </effect>
+                     <font>
+                        <Font name="Arial Unicode MS" size="13.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="Button" />
+                        <String fx:value="Un" />
+                     </styleClass>
+                  </Button>
+                  <ImageView fitHeight="92.0" fitWidth="89.0" layoutX="327.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/sas.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="259.0" layoutY="211.0" prefHeight="30.0" prefWidth="54.0" text="Pseudo:" textFill="#003366">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="pseudo" layoutX="262.0" layoutY="241.0" prefHeight="26.0" prefWidth="216.0" promptText="Saisir votre nom" />
+                  <Label layoutX="259.0" layoutY="276.0" prefHeight="30.0" prefWidth="125.0" text="Date de naissance:" textFill="#003366">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="260.0" layoutY="342.0" prefHeight="29.0" prefWidth="46.0" text="Email :" textFill="#003366">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="email" layoutX="259.0" layoutY="372.0" prefHeight="26.0" prefWidth="216.0" promptText="Saisir votre email" />
+                  <Label layoutX="261.0" layoutY="411.0" prefHeight="30.0" prefWidth="82.0" text="Mot de passe :" textFill="#003366">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="259.0" layoutY="467.0" prefHeight="30.0" prefWidth="200.0" text="Confirmer votre mot de passe:" textFill="#003366">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="password" layoutX="260.0" layoutY="441.0" prefHeight="26.0" prefWidth="216.0" promptText="Saisir votre mot de passe" />
+                     <TextField fx:id="adresse" layoutX="254.0" layoutY="566.0" prefHeight="25.0" prefWidth="216.0" promptText="Adresse" />
+            <Label layoutX="260.0" layoutY="540.0" prefHeight="26.0" prefWidth="216.0" text="Adresse:" textFill="#003366">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+                  <Button id="Button Un" fx:id="backBtn" layoutX="370.0" layoutY="682.0" mnemonicParsing="false" onAction="#backToLogin" prefHeight="31.0" prefWidth="82.0" style="-fx-background-color: #5DD6F4;" stylesheets="@Espace_Admin.css" text="Retour" textFill="WHITE">
+                     <effect>
+                        <ColorAdjust />
+                     </effect>
+                     <font>
+                        <Font name="Arial Unicode MS" size="13.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="Button" />
+                        <String fx:value="Un" />
+                     </styleClass>
+                  </Button>
+                  <PasswordField fx:id="confirm" layoutX="258.0" layoutY="505.0" prefHeight="26.0" prefWidth="216.0" promptText="Saisir votre mot de passe" />
+                  <Label fx:id="errorLabel" layoutX="263.0" layoutY="616.0" prefHeight="17.0" prefWidth="200.0" />
+                  <DatePicker fx:id="date_naissance" layoutX="256.0" layoutY="309.0" prefHeight="25.0" prefWidth="225.0" />
+                  <TextField fx:id="activation_tokenField" layoutX="260.0" layoutY="646.0" onKeyReleased="#updateVerifierBtn" />
+                  <Button fx:id="verifyTokenBtn" layoutX="425.0" layoutY="646.0" mnemonicParsing="false" onAction="#verifyTokenBtn" text="Verifier" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

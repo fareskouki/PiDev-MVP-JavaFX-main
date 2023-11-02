@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<!-- product_element.fxml -->
+
+<HBox alignment="CENTER" cache="true" prefHeight="154.0" prefWidth="882.0" spacing="50.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gn.module.produit_user.ControllerProduit">
+   <padding>
+      <Insets bottom="20.0" top="20.0" />
+   </padding>
+   <children>
+      <VBox alignment="CENTER" prefHeight="119.0" prefWidth="199.0" spacing="10.0" style="-fx-background-color: #e5e5e5; -fx-padding: 10px;">
+         <children>
+            <Label fx:id="nomLabel" style="-fx-font-weight: bold; -fx-font-size: 16px;" text="Nom" />
+            <Label fx:id="PrixLabel" style="-fx-font-weight: bold; -fx-font-size: 16px;" text="Prix" />
+            <Label fx:id="StockLabel" style="-fx-font-weight: bold; -fx-font-size: 16px;" text="Stock" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="119.0" prefWidth="220.0" spacing="10.0" style="-fx-background-color: #e5e5e5; -fx-padding: 10px;">
+         <children>
+            <Label fx:id="ratingLabel" style="-fx-font-weight: bold; -fx-font-size: 16px;" text="Rating" />
+            
+            <Label fx:id="descriptionLabel" prefWidth="200" style="-fx-font-size: 14px;" text="Description" />
+         </children>
+      </VBox>
+      <ImageView fx:id="imageView" fitHeight="113.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true" style="-fx-padding: 10px;">
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </ImageView>
+      <VBox alignment="CENTER" style="-fx-padding: 10px;">
+         <children>
+            <Button fx:id="ajouter" mnemonicParsing="false" onAction="#ajouter" prefHeight="37.0" prefWidth="183.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 16px;" text="Ajouter Panier" />
+            <Label fx:id="id" style="-fx-font-weight: bold; -fx-font-size: 16px;" visible="false" />
+         </children>
+      </VBox>
+   </children>
+</HBox>
